@@ -1,16 +1,6 @@
 import React, {useContext} from 'react';
 import { UserContext } from './contexts/UserContext';
-import { Link } from "@reach/router";
-
-const User = ({user}) => {
-const {fullName, id} = user;    
-  return (
-    <li>
-        {fullName}
-        <Link to={`/details/${id}`}>Edit</Link>
-    </li>
-  );
-}
+import { User } from './User';
 
 export const GridViewPage = () => {
     const { users } = useContext(UserContext);

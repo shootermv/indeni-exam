@@ -1,3 +1,41 @@
 * {
-    color:red;
-}
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  body {
+    background-color: #81a69b;
+    background-image: url(http://static.frontendmasters.com/resources/2019-05-02-complete-intro-react-v5/image-background.png);
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #modal {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #modal:empty {
+    display: none;
+  }
+  
+  #modal > div {
+    background-color: white;
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  #modal .buttons button {
+    display: inline-block;
+    margin-right: 15px;
+  }
