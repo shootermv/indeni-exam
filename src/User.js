@@ -1,23 +1,20 @@
 import React, {useState} from 'react';
 import { Link } from "@reach/router";
-import Modal from './shared/Modal';
+import {UserModal} from './UserModal';
 
 
 export const User = ({ user }) => {
     const [showModal, setShowModal] = useState(false);
     const { fullName, id } = user;
 
-    const toggleModal = ev => {
-        ev && ev.preventDefault();
+    const toggleModal = () => {
         setShowModal(!showModal);
     }
 
     return (<li>
-          {showModal ? (
-            <Modal>
-              User
-            </Modal>
-          ) : null}        
+         
+        <UserModal {...{showModal, toggleModal, user}}/>
+               
         {fullName}
         <Link to={`/details/${id}`}>Edit</Link>
         <button onClick={toggleModal}>view</button>
