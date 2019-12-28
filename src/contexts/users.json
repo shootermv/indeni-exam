@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "fullName": "Cord O'Hickey",
+    "email": "cohickey0@shareasale.com",
+    "address": "009 Novick Alley",
+    "avatar": "https://robohash.org/excepturioptiohic.bmp?size=50x50&set=set1",
+    "birthday": "7/22/1991"
+  },
+  {
+    "id": 2,
+    "fullName": "Alexandros Flecknoe",
+    "email": "aflecknoe1@bizjournals.com",
+    "address": "044 Milwaukee Circle",
+    "avatar": "https://robohash.org/doloremillumnihil.png?size=50x50&set=set1",
+    "birthday": "1/8/1990"
+  },
+  {
+    "id": 3,
+    "fullName": "Armando Walklett",
+    "email": "awalklett2@ucla.edu",
+    "address": "9 Darwin Circle",
+    "avatar": "https://robohash.org/perspiciatisquammodi.jpg?size=50x50&set=set1",
+    "birthday": "6/28/2000"
+  },
+  {
+    "id": 4,
+    "fullName": "Milicent Plewes",
+    "email": "mplewes3@cisco.com",
+    "address": "6 Oriole Alley",
+    "avatar": "https://robohash.org/autvoluptatibusid.jpg?size=50x50&set=set1",
+    "birthday": "5/4/1989"
+  },
+  {
+    "id": 5,
+    "fullName": "Jody Janoschek",
+    "email": "jjanoschek4@symantec.com",
+    "address": "04440 Di Loreto Lane",
+    "avatar": "https://robohash.org/distinctioaccusantiumnihil.png?size=50x50&set=set1",
+    "birthday": "10/20/1993"
+  },
+  {
+    "id": 6,
+    "fullName": "Wright Hewell",
+    "email": "whewell5@com.com",
+    "address": "089 Crest Line Drive",
+    "avatar": "https://robohash.org/etquispraesentium.jpg?size=50x50&set=set1",
+    "birthday": "10/30/1997"
+  },
+  {
+    "id": 7,
+    "fullName": "Marlyn Steanson",
+    "email": "msteanson6@bizjournals.com",
+    "address": "5634 Memorial Center",
+    "avatar": "https://robohash.org/nullavoluptatemtenetur.png?size=50x50&set=set1",
+    "birthday": "6/22/1989"
+  },
+  {
+    "id": 8,
+    "fullName": "Deerdre Capun",
+    "email": "dcapun7@ucsd.edu",
+    "address": "1 Jenna Hill",
+    "avatar": "https://robohash.org/autempariaturqui.png?size=50x50&set=set1",
+    "birthday": "7/11/1994"
+  }
+]
