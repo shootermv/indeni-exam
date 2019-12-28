@@ -1,8 +1,15 @@
 import React, {useContext} from 'react';
 import { UserContext } from './contexts/UserContext';
+import { Link } from "@reach/router";
 
-const User = () => {
-  return (<>user<br/></>);
+const User = ({user}) => {
+const {fullName, id} = user;    
+  return (
+    <li>
+        {fullName}
+        <Link to={`/details/${id}`}>Edit</Link>
+    </li>
+  );
 }
 
 export const GridViewPage = () => {
