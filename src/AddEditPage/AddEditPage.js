@@ -2,6 +2,8 @@ import React, { useContext, useState, useRef } from "react";
 import { UserContext } from "../contexts/UserContext";
 import { Link } from "@reach/router";
 import { navigate } from "@reach/router";
+import './AddEditPage.css';
+
 
 const getNewUser = () => ({
   avatar: "http://placecorgi.com/300/300",
