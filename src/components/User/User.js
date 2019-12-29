@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "@reach/router";
-import { UserModal } from "../../UserModal";
+import { UserModal } from "../UserModal";
 
 import edit from "./edit.svg";
 import view from "./view.svg";
