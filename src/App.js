@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div>
       <UserContextProvider>
-        <header>
+        <header className="main">
           <Link to="/details/new">New</Link>
           <Link to="/match">Find Your Match</Link>
         </header>
