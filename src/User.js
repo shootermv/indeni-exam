@@ -3,9 +3,12 @@ import { Link } from "@reach/router";
 import {UserModal} from './UserModal';
 
 
+import edit from './edit.svg';
+import view from './view.svg';
+
 export const User = ({ user }) => {
     const [showModal, setShowModal] = useState(false);
-    const { fullName, id } = user;
+    const { fullName, id, email, avatar} = user;
 
     const toggleModal = () => {
         setShowModal(!showModal);
@@ -14,9 +17,13 @@ export const User = ({ user }) => {
     return (<li>
          
         <UserModal {...{showModal, toggleModal, user}}/>
-               
-        {fullName}
-        <Link to={`/details/${id}`}>Edit</Link>
-        <button onClick={toggleModal}>view</button>
+
+        <img className="main" src={avatar} alt={`${fullName}`}/>       
+        <div>{fullName}</div>
+        <div>{email}</div>
+        <div className="actions">
+          <Link to={`/details/${id}`}><img src={edit} alt={edit}/></Link>
+          <button onClick={toggleModal}><img src={view} alt={view}/></button>
+        </div>   
     </li>);
 };
