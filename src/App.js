@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Router } from "@reach/router";
-import { GridViewPage } from "./GridViewPage";
-import { AddEditPage } from "./AddEditPage";
+
 import UserContextProvider from "./contexts/UserContext";
 import { MatchPage } from "./MatchPage";
+import { GridViewPage } from "./GridViewPage";
+import { AddEditPage } from './AddEditPage';
 
 const App = () => {
   return (

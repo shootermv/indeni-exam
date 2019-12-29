@@ -1,5 +1,5 @@
 import React, { useContext, useState, useRef } from "react";
-import { UserContext } from "./contexts/UserContext";
+import { UserContext } from "../contexts/UserContext";
 import { Link } from "@reach/router";
 import { navigate } from "@reach/router";
 
