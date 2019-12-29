@@ -1,12 +1,13 @@
 ## How To Use
-### `npm start`
+### `npm run dev`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:1234](http://localhost:1234) to view it in the browser.  
 
 view the [demo](https://ideni-exam.herokuapp.com/)
 
-
+## tests
+### `npm run test`
 
 ### Tools I Used To Build This App:
 
