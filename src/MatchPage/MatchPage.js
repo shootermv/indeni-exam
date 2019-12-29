@@ -1,5 +1,5 @@
 import React, {useContext, useState} from "react";
-import { UserContext } from './contexts/UserContext';
+import { UserContext } from '../contexts/UserContext';
 import { Link } from "@reach/router";
 
 const convertToDate = birthday => {

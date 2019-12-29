@@ -1,6 +1,6 @@
 import React from 'react';
 import {MatchPage} from './MatchPage'
-import {UserContext} from'./contexts/UserContext';
+import {UserContext} from'../contexts/UserContext';
 
 import {render, screen} from '@testing-library/react';
 
