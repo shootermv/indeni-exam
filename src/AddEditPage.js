@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { UserContext } from './contexts/UserContext';
+import { Link } from "@reach/router";
 import { navigate } from "@reach/router";
 
 const getNewUser = () => ({avatar: 'http://placecorgi.com/300/300', fullName: '', email: '', address: '', birthday: ''});
@@ -30,16 +31,22 @@ export const AddEditPage = ({id}) => {
     }
 
     return (
-        <form onSubmit={saveUser}>
-            <img src={user.avatar} alt={user.fullName}/>
-            <div className="container">
+        <>
+            <header className="main back">
+                <Link to="/">Back</Link>
+            </header>        
+            <form onSubmit={saveUser}>
                 
-                <div>Full Name:</div><div><input value={user.fullName} name="fullName" onChange={handleInputChange}/></div>
-                <div>BirthDay:</div><div><input type="date"  value={user.birthday} name="birthday" onChange={handleInputChange}/></div>
-                <div>Email:</div><div><input value={user.email} name="email" onChange={handleInputChange}/></div>
-                <div>Address:</div><div><input value={user.address} name="address" onChange={handleInputChange}/></div>     
-                <button>Save</button>
-            </div>
-        </form>
+                <img src={user.avatar} alt={user.fullName}/>
+                <div className="container">
+                    
+                    <div>Full Name:</div><div><input value={user.fullName} name="fullName" onChange={handleInputChange}/></div>
+                    <div>BirthDay:</div><div><input type="date"  value={user.birthday} name="birthday" onChange={handleInputChange}/></div>
+                    <div>Email:</div><div><input value={user.email} name="email" onChange={handleInputChange}/></div>
+                    <div>Address:</div><div><input value={user.address} name="address" onChange={handleInputChange}/></div>     
+                    <button>Save</button>
+                </div>
+            </form>
+        </>
     );
 };

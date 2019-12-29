@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Link } from "@reach/router";
+import { Router } from "@reach/router";
 import { GridViewPage } from "./GridViewPage";
 import { AddEditPage } from "./AddEditPage";
 import UserContextProvider from "./contexts/UserContext";
@@ -10,10 +10,6 @@ const App = () => {
   return (
     <div>
       <UserContextProvider>
-        <header className="main">
-          <Link to="/details/new">New</Link>
-          <Link to="/match">Find Your Match</Link>
-        </header>
         <Router>
           <GridViewPage path="/" />
           <AddEditPage path="/details/:id" />

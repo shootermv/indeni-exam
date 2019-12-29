@@ -1,5 +1,6 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useContext, useState} from "react";
 import { UserContext } from './contexts/UserContext';
+import { Link } from "@reach/router";
 
 const convertToDate = birthday => {
    const [month, day, year] = birthday.split('/');
@@ -50,17 +51,29 @@ export const MatchPage = () => {
         birthday: "1/8/1990"
     };
     
-    useEffect(() => {
+    setTimeout(() => {
         if (!users.length) {return;}
         // calculate score:
         const scores = users.map(({id, birthday, fullName}) => ({id, score: calcScore(currentUser, fullName, birthday).toFixed(2)})).sort((a, b) => b.score - a.score);
 
         setMatch(users.find(({id}) => scores[0].id === id));
-    }, [users])
+    }, 1000)
 
-    if (!match) return (<>calculating...</>);
+    if (!match) return (<div>calculating...</div>);
 
-    return (<>
-       your match is: {match.fullName}
-    </>);
+    return (
+      <>
+        <header className="main back">
+          <Link to="/">Back</Link>
+        </header>
+        <form>
+            <div> your match is:</div>
+            <img src={match.avatar} alt={match.fullName}/> 
+            <div className="container">
+                
+            {match.fullName}
+            </div> 
+        </form>
+      </>
+    );
 };
