@@ -1,5 +1,5 @@
 {
-  "name": "indeni assesment",
+  "name": "indeni-exam",
   "version": "1.0.0",
   "description": "assesment for Indeni company",
   "main": "src/App.js",
@@ -27,6 +27,7 @@
   "scripts": {
     "clear-build-cache": "rm -rf .cache/ dist/",
     "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"

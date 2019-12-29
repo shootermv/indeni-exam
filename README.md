@@ -2,7 +2,11 @@
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:1234](http://localhost:1234) to view it in the browser.
+Open [http://localhost:1234](http://localhost:1234) to view it in the browser.  
+
+view the [demo](https://ideni-exam.herokuapp.com/)
+
+
 
 ### Tools I Used To Build This App:
 
