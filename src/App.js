@@ -4,7 +4,7 @@ import { Router } from "@reach/router";
 
 import UserContextProvider from "./contexts/UserContext";
 import { MatchPage } from "./MatchPage";
-import { GridViewPage } from "./GridViewPage";
+import { GridViewPage } from "./GridViewPage/GridViewPage";
 import { AddEditPage } from './AddEditPage';
 
 const App = () => {
