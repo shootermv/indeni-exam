@@ -11,6 +11,10 @@ Open [http://localhost:1234](http://localhost:1234) to view it in the browser.
 * [React Context Api](https://reactjs.org/docs/context.html) - A new way of share data between components (become stable at recent versions)!
 * [React Hooks](https://reactjs.org/docs/hooks-intro.html) - More convenient way of writing react components introduced recently by React great Guys!
 
+### More Tools I Used For Generate Content
+
+* [randomuser](https://randomuser.me) - For generate cool avatar images
+* [Mockaroo](https://mockaroo.com/) - For generate json
 
 I know - some of the tools might seem to you as uncommon - but hey, i wanted to demonstrate that sometimes even when something is uncommon - it still can be good (so why not use it?)...  
 (Also i wanted to have little fun doing this assesment, and i think i deserve some fun too!)
