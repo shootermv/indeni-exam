@@ -13,6 +13,7 @@ const getNewUser = () => ({
   birthday: "1998-07-15"
 });
 const convertToYYYYMMDD = birthday => {
+  if (birthday.includes('-')) {return birthday;}
   let [month, day, year] = birthday.split("/");
   day = `0${day}`.slice(-2);
   month = `0${month}`.slice(-2);
