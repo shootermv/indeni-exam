@@ -10,3 +10,10 @@ test('initially should display "calculating..." message', () => {
     expect(screen.queryByText('your match is:')).toBeNull()
     expect(screen.queryByText('calculating...')).not.toBeNull()
 });
+
+test('after calculating should display match', () => {
+    render(<UserContext.Provider value={{users: []}}><MatchPage/></UserContext.Provider>)
+    setTimeout(() => {
+      expect(screen.queryByText('your match is:')).not.toBeNull();
+    }, 1000)
+});
