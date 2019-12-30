@@ -2,6 +2,7 @@ import React, { useContext, useState, useRef } from "react";
 import { UserContext } from "../contexts/UserContext";
 import { Link } from "@reach/router";
 import { navigate } from "@reach/router";
+import ErrorBoundary from '../shared/ErrorBoundary';
 import './AddEditPage.css';
 
 
@@ -12,6 +13,7 @@ const getNewUser = () => ({
   address: "",
   birthday: "1998-07-15"
 });
+
 const convertToYYYYMMDD = birthday => {
   if (birthday.includes('-')) {return birthday;}
   let [month, day, year] = birthday.split("/");
@@ -56,7 +58,7 @@ export const AddEditPage = ({ id }) => {
   };
 
   return (
-    <>
+    <ErrorBoundary>
       <header className="main back">
         <Link to="/">Back</Link>
       </header>
@@ -103,6 +105,6 @@ export const AddEditPage = ({ id }) => {
           <button>Save</button>
         </div>
       </form>
-    </>
+    </ErrorBoundary>
   );
 };
