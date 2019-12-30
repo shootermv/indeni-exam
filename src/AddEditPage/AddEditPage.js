@@ -34,10 +34,10 @@ export const AddEditPage = ({ id }) => {
   const ref = useRef(null);
   const { users, dispatch } = useContext(UserContext);
   const [user, setUser] = useState(isNew ? getNewUser : getUser(users, id));
-
+  
   const handleInputChange = event => {
     const { name, value } = event.target;
-
+   
     setUser({ ...user, [name]: value });
   };
 
@@ -56,9 +56,8 @@ export const AddEditPage = ({ id }) => {
     dispatch({ type: "EDIT_USER", user });
     navigate("/");
   };
-
   return (
-    <ErrorBoundary>
+    <>
       <header className="main back">
         <Link to="/">Back</Link>
       </header>
@@ -105,6 +104,15 @@ export const AddEditPage = ({ id }) => {
           <button>Save</button>
         </div>
       </form>
-    </ErrorBoundary>
+    </>
   );
+  
 };
+
+const AddEditPageBoundary = props => (
+  <ErrorBoundary>
+    <AddEditPage {...props}/>
+  </ErrorBoundary>
+)
+
+export {AddEditPageBoundary};

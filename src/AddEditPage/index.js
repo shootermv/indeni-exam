@@ -1,1 +1,1 @@
-export {AddEditPage} from './AddEditPage';
+export {AddEditPageBoundary} from './AddEditPage';
