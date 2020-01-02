@@ -2,7 +2,7 @@ import React from 'react';
 import {MatchPage} from './MatchPage'
 import {UserContext} from'../contexts/UserContext';
 
-import {render, screen} from '@testing-library/react';
+import {render, screen, waitForElement} from '@testing-library/react';
 
 
 test('initially should display "calculating..." message', () => {
@@ -11,9 +11,12 @@ test('initially should display "calculating..." message', () => {
     expect(screen.queryByText('calculating...')).not.toBeNull()
 });
 
-test('after calculating should display match', () => {
-    render(<UserContext.Provider value={{users: []}}><MatchPage/></UserContext.Provider>)
-    setTimeout(() => {
-      expect(screen.queryByText('your match is:')).not.toBeNull();
-    }, 1000)
+test('after calculating should display match', async () => {
+  const  users =  [{birthday: '12/1/1990', fullName: 'Albert'}];
+  const {queryByText, container} = render(<UserContext.Provider value={{users}}><MatchPage/></UserContext.Provider>)
+  await waitForElement(() => queryByText('your match is:'),
+    {container}
+  );
+  expect(document.querySelector('.container').textContent).toBe('Albert');
+    
 });
