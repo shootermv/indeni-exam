@@ -1,1 +1,0 @@
-export {MatchPage} from './MatchPage';
